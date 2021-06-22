@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DeadPool2</title>
+
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+  </head>
+  <body>
+    <div id="container">
+
+      <header>
+        <nav class="cabecalho">
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="deadpool.html">DeadPool</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+        <form action="contato.html" method="post" onsubmit="alert('Mensagem enviado com sucesso !!!')">
+          <label for="nomeSobrenome" >Nome e Sobrenome</label>
+          <input type="text" id="nomeSobrenome" class="input-padrao" required>
+
+          <label for="email">E-mail</label>
+          <input type="email" id="email" class="input-padrao" placeholder="seuemail@dominio.com" required>
+
+          <label for="telefone">Telefone</label>
+          <input type="tel" id="telefone" class="input-padrao" placeholder="(XX)XXXXX-XXXX" required>
+
+          <label for="mensagem">Mensagem</label>
+          <textarea id="mensagem" rows="10" cols="70" class="input-padrao" placeholder="Escreva sua Mensagem" required></textarea>
+
+          <label for="checkbox" class="checkbox">
+            <input type="checkbox" checked>
+            Gostaria de receber novos posts por email ?
+          </label>
+
+          <input type="submit" class="enviar" value="Enviar">
+        </form>
+      </main>
+
+      <footer>
+        <p>&copy;Copyright 2017-2018 deadpool.com - Todos os direitos reservados.</p>
+        <p>Mais em:<a href="http://www.imdb.com" target="_blank">IMDB</a></p>
+      </footer>
+
+    </div>
+  </body>
+</html>
